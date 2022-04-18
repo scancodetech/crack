@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+ul, li{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(248, 182, 41)!important;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8, h9, p {
+  margin: 0;
+  font-weight: normal;
+}
+
+i, em {
+  box-sizing: border-box;
+  font-style:normal;
+  outline: none;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input {
+  overflow: visible;
+  outline: none;
+  border: none;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
+  touch-action: manipulation;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+html {
+  height: -webkit-fill-available;
+  --antd-wave-shadow-color: #f8b629;
+  --scroll-bar: 0;
+  --antd-wave-border-color: var(--antd-wave-shadow-color);
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  background: #000;
+  font-family: 'FZBANGSHUKAIJW--GB1-0', 'FZBANGSHUKAIJW--GB1';
+  font-variant: tabular-nums;
+  font-feature-settings: "tnum","tnum";
+}
+
+input {
+  color: #000;
+  background: transparent;
+}
+input::-webkit-input-placeholder {
+  color: #7B7B7B;
+}
+
+// 一些全局样式
+.van-toast__text {
+  word-break: break-word;
+}
+
+.pg_mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.pg_pop {
+  position: relative;
+  z-index: 500;
+  .pg_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .75);
+    z-index: 600;
+  }
+  .pg_mbox {
+    position: fixed;
+    z-index: 650;
+    width: 325px;
+    top: 50%;
+    left: 50%;
+    min-height: 200px;
+    max-height: 90vh;
+    border-radius: 16px;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+  }
+  .pgm_close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 12px;
+    z-index: 655;
+  }
+}
+
+.pg_ipt {
+  margin: 12px 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #232832;
+  border-radius: 8px;
+  >input {
+    text-indent: 1em;
+    height: 100%;
+    flex: 1;
+    font-size: 15px;
+    background: transparent;
+    color: #fff;
+  }
+  .max {
+    margin: 0 12px;
+    padding: 8px;
+    font-size: 13px;
+    border-radius: 4px;
+  }
+}
+
+.pg_btn1 {
+  padding: 0 24px;
+  width: 115px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-align: center;
+  background: linear-gradient(151deg, #3687F7 0%, #0767F3 100%);
+  color: #fff;
+  border-radius: 20px;
+  cursor: default;
+}
+
+.pg_btn2 {
+  color: #2A7FF6;
+  background: #fff;
+  border: 1px solid #2A7FF6;
+}
+
+.pg_head {
+  padding:  0 0 17px;
+  font-size: 18px;
+  color: #212833;
+  font-weight: 600;
+  border-bottom: 1px solid #ECEBEB;
+}
+
+.pg_tit {
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  .pgt_ibox {
+    margin-right: -8px;
+    width: 28px;
+  }
+}
+
+.pg_item {
+  height: 230px;
+  text-align: center;
+  background: rgba(33, 225, 174, 0.07);
+  border-radius: 10px;
+  .pg_img {
+    padding: 25px 0;
+    margin: 0 auto;
+    display: block;
+    width: 75px;
+    height: 122px;
+  }
+  .name {
+    color: #A4A4A4;
+    font-size: 13px;
+  }
+  .pic {
+    padding: 12px 0 20px;
+    font-size: 16px;
+    color: #21E1AE;
+  }
+}
+
+
+//图标
+.dowm_icon {
+  display: inline-block;
+  width: 8px;
+  height: 5px;
+  border-top: 8px solid rgba(255,255,255,.7);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin:0 5px;
+}
+
+.van-uploader__upload{
+  border-radius: 12px;
+  width: 315px;
+  height: 205px;
+  background: rgba(33, 225, 174, 0.07);
+}
+
+.van-icon{
+  font-size: 30px;
+  color: rgba(255,255,255,.7);
+}
+
+.el-upload--picture-card {
+  background: rgba(33, 225, 174, 0.07);
+}
